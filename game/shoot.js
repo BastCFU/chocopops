@@ -51,13 +51,6 @@ function bullet_collision()
             player1.bullets.splice(i, 1);
             i--;
         }   
-        if (Math.abs(player1.bullets[i].position.x) == player2.graphic.position.x &&
-            Math.abs(player1.bullets[i].position.y) == player2.graphic.position.y)
-        {
-            scene.remove(player1.bullets[i]);
-            player2.dead();
-            i--;
-        }
     }
 
 }
